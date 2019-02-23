@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 
 @Controller
-@RequestMapping("/main")
+@RequestMapping("/")
 public class MainController {
 
-	@RequestMapping("/index")
+	@RequestMapping("/hi")
 	@ResponseBody
-	public String index() {
-		return "index12";
+	public Maptest index() {
+		throw new RuntimeException("index");
 	}
 
 }
